@@ -1,0 +1,35 @@
+{
+  "warehouses": [
+    {"id": "W1", "location": "Shanghai Hub", "region": "Asia Pacific", "capacity": 15000, "demand_load": 8500, "inventory": 12000},
+    {"id": "W2", "location": "Rotterdam Port", "region": "Europe", "capacity": 12000, "demand_load": 7200, "inventory": 9500},
+    {"id": "W3", "location": "Los Angeles DC", "region": "North America", "capacity": 18000, "demand_load": 11000, "inventory": 14000},
+    {"id": "W4", "location": "Dubai Logistics", "region": "Middle East", "capacity": 9000, "demand_load": 5500, "inventory": 7200},
+    {"id": "W5", "location": "Sao Paulo Center", "region": "South America", "capacity": 8000, "demand_load": 6200, "inventory": 5800},
+    {"id": "W6", "location": "Mumbai Gateway", "region": "South Asia", "capacity": 11000, "demand_load": 9000, "inventory": 8500},
+    {"id": "W7", "location": "Tokyo Terminal", "region": "East Asia", "capacity": 13000, "demand_load": 7800, "inventory": 10200},
+    {"id": "W8", "location": "Nairobi Depot", "region": "Africa", "capacity": 6000, "demand_load": 4200, "inventory": 4800}
+  ],
+  "routes": [
+    {"id": "R1", "source": "W1", "destination": "W7", "cost": 1200, "time": 3.2, "mode": "sea"},
+    {"id": "R2", "source": "W1", "destination": "W6", "cost": 2800, "time": 1.4, "mode": "air"},
+    {"id": "R3", "source": "W1", "destination": "W3", "cost": 4500, "time": 9.2, "mode": "sea"},
+    {"id": "R4", "source": "W2", "destination": "W3", "cost": 2900, "time": 5.3, "mode": "air"},
+    {"id": "R5", "source": "W2", "destination": "W8", "cost": 1600, "time": 6.1, "mode": "sea"},
+    {"id": "R6", "source": "W2", "destination": "W4", "cost": 1900, "time": 4.5, "mode": "road"},
+    {"id": "R7", "source": "W3", "destination": "W5", "cost": 2100, "time": 5.8, "mode": "sea"},
+    {"id": "R8", "source": "W3", "destination": "W8", "cost": 3300, "time": 2.1, "mode": "air"},
+    {"id": "R9", "source": "W4", "destination": "W6", "cost": 900, "time": 1.7, "mode": "road"},
+    {"id": "R10", "source": "W4", "destination": "W8", "cost": 1400, "time": 4.2, "mode": "sea"},
+    {"id": "R11", "source": "W5", "destination": "W8", "cost": 1700, "time": 4.7, "mode": "sea"},
+    {"id": "R12", "source": "W7", "destination": "W4", "cost": 3600, "time": 1.8, "mode": "air"},
+    {"id": "R13", "source": "W7", "destination": "W1", "cost": 1100, "time": 2.5, "mode": "sea"},
+    {"id": "R14", "source": "W6", "destination": "W2", "cost": 2500, "time": 3.4, "mode": "air"},
+    {"id": "R15", "source": "W8", "destination": "W2", "cost": 1500, "time": 5.1, "mode": "sea"}
+  ],
+  "demand": [
+    {"region": "W3", "required_units": 1},
+    {"region": "W4", "required_units": 1},
+    {"region": "W5", "required_units": 1},
+    {"region": "W8", "required_units": 2}
+  ]
+}

@@ -1,0 +1,8 @@
+
+node_modules/
+**/node_modules/
+.venv/
+**/__pycache__/
+
+Quantum-Optimizer-for-Supply-Chain/
+

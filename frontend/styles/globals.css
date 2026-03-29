@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    color: #0f172a;
+    background:
+      radial-gradient(circle at 12% -16%, rgba(37, 99, 235, 0.16), transparent 35%),
+      radial-gradient(circle at 88% 2%, rgba(14, 165, 233, 0.14), transparent 30%),
+      #f3f6fb;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Space Grotesk", "Manrope", sans-serif;
+  }
+}
+
+@layer components {
+  .bg-app {
+    background:
+      radial-gradient(circle at 22% -26%, rgba(59, 130, 246, 0.11), transparent 34%),
+      radial-gradient(circle at 78% 0%, rgba(96, 165, 250, 0.1), transparent 28%),
+      #f4f7fc;
+  }
+
+  .card {
+    @apply rounded-xl border border-slate-200/80 bg-white shadow-sm;
+  }
+
+  .primary-btn {
+    @apply inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 px-4 py-2 text-sm font-semibold text-white;
+    @apply transition hover:from-blue-500 hover:to-blue-600 hover:shadow active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-70;
+  }
+
+  .secondary-btn {
+    @apply inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700;
+    @apply transition hover:bg-slate-50 hover:text-slate-900 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-70;
+  }
+
+  .tab-btn {
+    @apply w-1/2 rounded-md px-3 py-1.5 text-center text-slate-500 transition;
+  }
+
+  .tab-btn-active {
+    @apply bg-white text-slate-800 shadow-sm;
+  }
+
+  .metric-row {
+    @apply flex items-center justify-between rounded-md bg-slate-50 px-2 py-1.5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef2ff;
+}
+

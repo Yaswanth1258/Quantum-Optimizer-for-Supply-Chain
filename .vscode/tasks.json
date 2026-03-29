@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Serve frontend static (5501)",
+			"type": "shell",
+			"command": "cd d:/SC/frontend; d:/SC/.venv/Scripts/python.exe -m http.server 5501",
+			"isBackground": true
+		}
+	]
+}
