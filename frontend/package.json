@@ -2,6 +2,10 @@
   "name": "quantum-supplychain-dashboard",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18 <21",
+    "npm": ">=9 <11"
+  },
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
